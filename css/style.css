@@ -93,6 +93,60 @@ body {
   margin-bottom: 6.5rem;
 }
 
+.title-secondary {
+  display: inline-block;
+  font-size: 3.6rem;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(161, 79, 3, 0.7) 99.94%);
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all .4s;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  backface-visibility: hidden;
+}
+
+.title-secondary:hover {
+  transform: skewY(2deg) skewX(15deg) scale(1.1);
+  text-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+}
+
+.title-third {
+  font-size: 2rem;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+  letter-spacing: .2rem;
+  line-height: 140%;
+  font-weight: 400;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.margin-bottom-80 {
+  margin-bottom: .8rem;
+}
+
+.margin-bottom-10 {
+  margin-bottom: 1rem;
+}
+
+.margin-bottom-30 {
+  margin-bottom: 3rem;
+}
+
+.margin-bottom-50 {
+  margin-bottom: 5rem;
+}
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -141,6 +195,68 @@ body {
   animation-fill-mode: backwards;
 }
 
+.btn-text {
+  font-weight: 600;
+  letter-spacing: .2rem;
+  font-size: 1.6rem;
+  color: #777;
+  text-decoration: none;
+  padding: 1rem;
+  border-bottom: 1px #A14F03 solid;
+  display: inline-block;
+  transition: .5 all;
+}
+
+.btn-text:hover {
+  background-color: #A14F03;
+  color: #fff;
+  box-shadow: 0rem 0.4rem 0.4rem 0rem rgba(0, 0, 0, 0.5);
+  transform: translateY(-0.2rem);
+}
+
+.btn-text:active {
+  transform: translateY(0);
+}
+
+.composition {
+  position: relative;
+}
+
+.composition__photo {
+  width: 55%;
+  box-shadow: 0rem 0.4rem 0.4rem 0rem rgba(0, 0, 0, 0.5);
+  border-radius: .5rem;
+  position: absolute;
+  z-index: 10;
+  transition: all .4s;
+  outline-offset: .5rem;
+}
+
+.composition__photo_n1 {
+  top: 0;
+  left: 2rem;
+}
+
+.composition__photo_n2 {
+  top: 2rem;
+  right: 0rem;
+}
+
+.composition__photo_n3 {
+  top: 13rem;
+  left: 10rem;
+}
+
+.composition__photo:hover {
+  transform: scale(1.1);
+  z-index: 20;
+  outline: 1rem solid #BA8554;
+}
+
+.composition:hover .composition__photo:not(:hover) {
+  transform: scale(0.9);
+}
+
 .header {
   position: relative;
   height: 95vh;
@@ -167,7 +283,6 @@ body {
 
 .row {
   max-width: 114rem;
-  background: #777;
   margin: 0 auto;
 }
 
@@ -207,9 +322,12 @@ body {
 
 [class^="col-"] {
   float: left;
-  background: red;
 }
 
 [class^="col-"]:not(:last-child) {
   margin-right: 6rem;
+}
+
+.section {
+  padding-top: 8rem;
 }
