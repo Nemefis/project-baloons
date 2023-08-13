@@ -257,6 +257,27 @@ body {
   transform: scale(0.9);
 }
 
+.adventure-card {
+  padding: 2.5rem;
+  background-color: #ffffff80;
+  border-radius: .5rem;
+  box-shadow: 0rem 0.4rem 0.4rem 0rem rgba(0, 0, 0, 0.5);
+  text-align: center;
+  transition: all .4s;
+}
+
+.adventure-card:hover {
+  transform: translateY(-1.5rem) scale(1.03);
+}
+
+.adventure-card__icon {
+  font-size: 6rem;
+  background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(161, 79, 3, 0.7) 99.94%);
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
 .header {
   position: relative;
   height: 95vh;
@@ -328,6 +349,16 @@ body {
   margin-right: 6rem;
 }
 
-.section {
+.section-about {
   padding-top: 8rem;
+}
+
+.section-adventure {
+  padding: 21rem 0rem;
+  background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url(../img/bg-adventure.jpg) center/cover no-repeat;
+  transform: skewY(7deg);
+}
+
+.section-adventure > * {
+  transform: skewY(-7deg);
 }
