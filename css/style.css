@@ -58,7 +58,7 @@ body {
 }
 
 .container {
-  background-color: white;
+  background-color: #c4c4c4;
 }
 
 .title-first__main {
@@ -113,6 +113,10 @@ body {
   text-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
 }
 
+.title-secondary_white {
+  color: #fff;
+}
+
 .title-third {
   font-size: 2rem;
   letter-spacing: .2rem;
@@ -132,7 +136,7 @@ body {
 }
 
 .margin-bottom-80 {
-  margin-bottom: .8rem;
+  margin-bottom: 8rem;
 }
 
 .margin-bottom-10 {
@@ -278,40 +282,38 @@ body {
   display: inline-block;
 }
 
-.card-tour {
-  height: 50rem;
-  perspective: 150rem;
-  -moz-perspective: 150rem;
+.feedback-card {
+  width: 75%;
+  background: #ffffff75;
+  box-shadow: 0rem 0.4rem 0.4rem 0rem rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  padding: 6rem;
+  transform: skewX(-15deg);
+}
+
+.feedback-card > * {
+  transform: skewX(15deg);
+}
+
+.feedback-card__img {
+  width: 15rem;
+  height: 15rem;
+  background: green;
+  float: left;
+  border-radius: 15rem;
+  shape-outside: circle(50% at 50% 50%);
+  -webkit-shape-outside-: circle(50% at 50% 50%);
+  margin-right: 4rem;
+  overflow: hidden;
   position: relative;
 }
 
-.card-tour__side {
-  position: absolute;
-  top: 0;
-  left: 0;
+.feedback-card__img img {
   width: 100%;
-  backface-visibility: hidden;
-  height: 50rem;
-  transition: .6s all ease-out;
-  color: #fff;
 }
 
-.card-tour__side_front {
-  background: yellow;
-}
-
-.card-tour__side_back {
-  background: black;
-  transform: rotateY(180deg);
-  background: linear-gradient(120deg, rgba(186, 133, 84, 0.7) 0%, rgba(161, 79, 3, 0.7) 100%);
-}
-
-.card-tour:hover .card-tour__side_front {
-  transform: rotateY(180deg);
-}
-
-.card-tour:hover .card-tour__side_back {
-  transform: rotateY(0deg);
+.feedback-card__name {
+  position: absolute;
 }
 
 .header {
@@ -401,4 +403,8 @@ body {
 
 .section-tour {
   padding-top: 21rem;
+}
+
+.section-feedback {
+  padding-top: 8rem;
 }
