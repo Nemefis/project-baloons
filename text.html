@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block Script with JavaScript</title>
+    <script>
+        // Изменение атрибута src перед загрузкой DOM
+        document.addEventListener('DOMContentLoaded', function() {
+            var scripts = document.querySelectorAll('script');
+            scripts.forEach(function(script) {
+                if (script.src.includes('s.clickiocdn.com')) {
+                    console.log('Blocked:', script.src);
+                    script.src = 'none'; // Меняем src на 'none'
+                }
+            });
+        });
+        console.log("test3")
+    </script>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <!-- Скрипт, который нужно заблокировать -->
+    <script async="" type="text/javascript" src="//s.clickiocdn.com/t/common_258.js"></script>
+</body>
+</html>

@@ -479,6 +479,19 @@ body {
   background: linear-gradient(90deg, rgba(186, 133, 84, 0.7), rgba(0, 0, 0, 0.7));
 }
 
+.book {
+  height: 50rem;
+  background: linear-gradient(115deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 57%, rgba(186, 133, 84, 0.9) 57%, rgba(161, 79, 3, 0.9) 100%), url(../img/bg_form.jpeg) center/cover no-repeat;
+  box-shadow: 0rem 0.4rem 0.4rem 0rem rgba(0, 0, 0, 0.5);
+  border-radius: .5rem;
+  overflow: hidden;
+}
+
+.form {
+  width: 60%;
+  padding-top: 5rem;
+}
+
 .header {
   position: relative;
   height: 95vh;
@@ -556,7 +569,7 @@ body {
 
 .section-adventure {
   padding: 21rem 0rem;
-  background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url(../img/bg-adventure.jpg) center/cover no-repeat;
+  background: linear-gradient 90deg, rgba(186, 133, 84, 0.7), rgba(0, 0, 0, 0.7), url(../img/bg-adventure.jpg) center/cover no-repeat;
   transform: skewY(7deg);
 }
 
@@ -572,4 +585,9 @@ body {
   padding-top: 8rem;
   position: relative;
   padding: 8rem 0;
+}
+
+.section-book {
+  padding: 10rem;
+  background: linear-gradient(90deg, #BA8554, #A14F03);
 }
